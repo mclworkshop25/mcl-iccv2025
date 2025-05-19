@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <meta name="keywords" content="ICCV, workshop, computer vision, multimodal leanring, continual learning">
+
+  <link rel="shortcut icon" href="static/img/site/favicon_b.png">
+
+  <title>MCL@ICCV25</title>
+  <meta name="description" content="MCL, ICCV 2025 Workshop">
+
+  <!--Open Graph Related Stuff-->
+  <meta property="og:title" content="Multimodal Continual Learning Workshop"/>
+  <meta property="og:url" content="https://mclworkshop25.github.io/mcl-iccv25/ICCV2025/index.html"/>
+  <meta property="og:description" content="MCL, ICCV 2025 Workshop"/>
+  <meta property="og:site_name" content="Multimodal Continual Learning"/>
+  <meta property="og:image" content="https://cv4a11y.github.io/ICCV2025/static/img/site/teaser.jpg"/>
+
+  <!--Twitter Card Stuff-->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Multimodal Continual Learning Workshop"/>
+  <meta name="twitter:image" content="https://cv4a11y.github.io/ICCV2025/static/img/site/teaser.jpg">
+  <meta name="twitter:url" content="https://mclworkshop25.github.io/mcl-iccv25/ICCV2025/index.html"/>
+  <meta name="twitter:description" content="MCL, ICCV 2025 Workshop"/>
+
+  <!-- CSS  -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="static/css/main.css" media="screen,projection">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+  <style>
+
+    .people-pic {
+      max-width: 125px;
+      max-height: 125px;
+      /*width:300px;*/
+      /*height:300px;*/
+      object-fit: cover;
+      border-radius: 50%;
+  }
+  </style>
+</head>
+
+  <body>
+
+    <!-- <div class="top-strip"></div> -->
+<div class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/"></a>
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+
+    <div class="navbar-collapse collapse" id="navbar-main">
+      <ul class="nav navbar-nav">
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#cfp">Call for papers</a></li>
+        <li><a href="#dates">Schedule</a></li>
+        <li><a href="#speakers">Invited Speakers</a></li>
+        <li><a href="#organizers">Organizers</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <!-- <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="../CVPR2021/index.html" target="__blank">CVPR 2021</a></li>
+            <li><a href="../ECCV2022/" target="__blank">ECCV 2022</a></li>
+          </ul>
+        </li> -->
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+
+    <div class="container">
+      <div class="page-content">
+          <p><br /></p>
+<div class="row">
+  <div class="col-xs-12">
+    <center><h1>Workshop on Multimodal Continual Learning </h1></center>
+    <center><h2>ICCV 2025 Workshop</h2></center>
+    <center>TBD, 2025</center>
+  </div>
+</div>
+
+<hr />
+
+
+<!-- <br>
+  <center>
+  <h1 style="color:red"><a href="https://www.youtube.com/watch?v=gyJDGrbLknI">The <b>video recording</b> of this workshop is here!</a></h1>
+  </center>
+<br> -->
+
+<!-- <div class="alert alert-info" role="alert">
+  <b>Join Zoom Meeting  <a href="https://kaust.zoom.us/j/95818223470">here</a>.</b>
+</div> -->
+
+
+
+<!-- <div class="row" id="teaser">  
+    <div>  
+    <img src="static/img/site/teaser_b.png" style="width: 100%; height: auto;"/>
+  </div>
+</div>
+ -->
+
+<!-- <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/a.png">
+</div>
+
+<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6"> 
+  <img src="static/img/site/b.png">
+</div>
+ -->
+
+
+
+<p><br /></p>
+<div class="row" id="intro">
+  <div class="col-xs-12">
+    <h2>Introduction</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      In recent years, the machine learning and computer vision community has made significant advancements in continual learning (CL)—also known as lifelong learning or incremental learning—which enables models to learn new tasks incrementally while retaining previously acquired knowledge without requiring full-data retraining. Most of the early work in CL has focused on unimodal data, such as images, primarily for classification problems. However, with the rise of powerful multimodal models, which unify images, videos, text, and even audio, multimodal continual learning (MCL) has emerged as a crucial research direction. Unlike unimodal CL, where knowledge retention is constrained within a single modality, MCL must handle multiple modalities simultaneously. This introduces new challenges, such as modality-specific forgetting, modality imbalance, and the preservation of cross-modal associations over time.
+
+      This MCL workshop aims to address these challenges, explore emerging research opportunities, and advance the development of more inclusive, efficient, and continual learning systems. It will provide a platform for discussing cutting-edge research, identifying critical challenges, and fostering collaboration across academia, industry, and accessibility communities. This workshop is highly relevant to computer vision and machine learning researchers, AI practitioners, and those working on multimodal AI systems.    </p>
+  </div>
+</div>
+
+<p><br /></p> 
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Call For Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+      <p>
+        <span style="font-weight:500;">Topics:</span> This workshop will cover, but is not limited to, the following topics at the intersection of computer vision, multimodal learning, continual learning:
+      </p>
+      <ul>
+
+        <li> Multimodal Continual Learning (MCL)</li>
+        <li> Multimodal Class-Incremental Learning</li>
+        <li> Multimodal Domain-Incremental Learning</li>
+        <li> Multimodal Task-Incremental Learning</li>
+        <li> Multimodal Continual Learning in Generative Models</li>
+        <li> Continual Learning in Multimodal Foundation Models</li>
+        <li> Continual Learning in Multimodal Large Language Models (MLLMs)</li>
+        <li> Audio-Visual Continual Learning</li>
+        <li> Vision-Language Continual Learning</li>
+        <li> Bias, Fairness, and Transparency in Continual Learning</li>
+        <li> Benchmarking and Evaluation</li>
+        <li> Applications</li>
+      </ul>
+      <p>
+        <span style="font-weight:500;">Submission:</span> The workshop invite both extended abstract and full paper submissions. We use <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/MCL">OpenReview</a> to manage submissions. The submission should be in the ICCV format. Please download the <a href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip"> ICCV 2025 Author Kit</a> for detailed formatting instructions.
+        Reviewing will be double-blind. Consistent with the review process for ICCV 2025 main conference, submissions under review will be visible only to their assigned members of the program committee. The reviews and author responses will never be made public. All accepted full papers and extended abstracts will be invited to present a poster. A selection of outstanding full papers will also be invited for oral presentations.
+        <ul>
+        <li> <span style="font-weight:500;">Extended Abstracts:</span> We accept 2-4 page extended abstracts. Accepted extended abstracts will not be published in the conference proceedings, allowing future submissions to archival conferences or journals. We also welcome already published papers that are within the scope of the workshop, including papers from the main ICCV conference.</li>
+        <li><span style="font-weight:500;">Full papers:</span> Papers should be longer than 4 pages but limited to 8 pages, excluding references, following the ICCV style.  Accepted full papers will be published in the ICCV workshop proceedings. </li>  
+      </ul>
+      <p>
+        <span style="color:black;"><strong>Note:</strong></span> Since we are using the same submission system to manage all submissions, we have set the extended abstract deadline:
+        <span style="color:red;"><strong>August 01</strong></span> as the workshop paper submission deadline on Openreview. However, please note that the full paper submission deadline is much earlier—
+        <span style="color:red;"><strong>June 30</strong></span>—as we are required to provide paper information to the ICCV 2025 conference by their deadline.
+      </p>
+      </p>
+  </div>
+</div>                                                                                        
+
+<!-- <p><br /></p>
+<div class="row" id="cfp">
+  <div class="col-xs-12">
+    <h2>Accepted Papers</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <table>
+      <tbody> 
+      <tr><td><a href="https://arxiv.org/abs/2212.01558">#1. PartSLIP: Low-Shot Part Segmentation for 3D Point Clouds via Pretrained Image-Language Models</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Minghua Liu, Yinhao Zhu, Hong Cai, Shizhong Han, Zhan Ling, Fatih Porikli, Hao Su</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2112.08359">#2. 3D Question Answering</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuquan Ye, Dongdong Chen, Songfang Han, Jing Liao</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2211.11682">#3. PointCLIP V2: Prompting CLIP and GPT for Powerful 3D Open-world Learning</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Xiangyang Zhu, Renrui Zhang, Bowei He, Ziyu Guo, Ziyao Zeng, Zipeng Qin, Shanghang Zhang, Peng Gao</font></td> </tr>        
+      <tr><td><a href="https://arxiv.org/abs/2211.16312">#4. PLA: Language-Driven Open-Vocabulary 3D Scene Understanding</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Runyu Ding, Jihan Yang, Chuhui Xue, Wenqing Zhang, Song Bai, Xiaojuan Qi</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2303.16894">#5. ViewRefer: Grasp the Multi-view Knowledge for 3D Visual Grounding</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Zoey Guo, Yiwen Tang, Ray Zhang, Dong Wang, Zhigang Wang, Bin Zhao, Xuelong Li</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2211.15654">#6.  OpenScene: 3D Scene Understanding with Open Vocabularies</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Songyou Peng, Kyle Genova, Chiyu "Max" Jiang, Andrea Tagliasacchi, Marc Pollefeys, Thomas Funkhouser</font></td></tr>
+      <tr><td><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Kurita_RefEgo_Referring_Expression_Comprehension_Dataset_from_First-Person_Perception_of_Ego4D_ICCV_2023_paper.pdf">#7. RefEgo: Referring Expression Comprehension Dataset from First-Person Perception of Ego4D </a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuhei Kurita, Naoki Katsura, Eri Onami</font></td></tr>
+      <tr><td><a href="https://arxiv.org/abs/2303.12236">#8. SALAD: Part-Level Latent Diffusion for 3D Shape Generation and Manipulation</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Juil Koo, Seungwoo Yoo, Minh Hieu Nguyen, Minhyuk Sung</font></td></tr>
+      <tr><td><a href="https://3d-vista.github.io">#9. 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Ziyu Zhu, Xiaojian Ma, Yixin Chen, Zhidong Deng, Siyuan Huang, Qing Li</font></td></tr>
+    </tbody></table>
+  </div>
+
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="dates">
+  <div class="col-xs-12">
+    <h2>Important Dates</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Call for papers announced</td>
+          <td>May 12</td>
+        </tr>
+        <tr>
+          <td><span style="color:red;"><strong> Full Paper submission deadline</strong></span> </td>
+          <td>June 30</td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted Full papers</td>
+          <td>July 10 </td>
+        </tr>
+        <tr>
+          <td><span style="color:red;"><strong>Extended Abstract submission deadline</strong></span>  </td>
+          <td>Aug 01</td>
+        </tr>
+        <tr>
+          <td>Notifications to accepted Extended abstract papers</td>
+          <td>Aug 10</td>
+        </tr>
+        <tr>
+          <td>Camera-ready deadline for accepted full and Extended abstract papers</td>
+          <td>Aug 16</td>
+        </tr>
+        <tr>
+          <td>Workshop date</td>
+          <td>TBA</td>
+        </tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="schedule">
+  <div class="col-xs-12">
+    <h2>Schedule (Hawaii Standard Time)</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    TBA
+     <!-- <table class="table table-striped">
+      <tbody>
+        <tr>
+          <td>Welcome</td>
+          <td>2:00pm - 2:05pm / 5:00am - 4:05am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Rana Hanocka)</td>
+          <td>2:05pm - 2:30pm / 5:05am - 5:30am</td>
+        </tr>
+        <tr>
+          <td>Presentation of challenge winners</td>
+          <td>2:30pm - 2:55pm / 5:30am - 5:55am</td>
+        </tr>
+        <tr>
+          <td>Poster session / Coffee break</td>
+          <td>3:00pm - 3:25pm / 6:00am - 6:25am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Chris Paxton)</td>
+          <td>3:30pm - 4:00pm / 6:30am - 7:00am</td>
+        </tr>
+        <tr>
+          <td>Invited Talk (Or Litany)<br/>Talking to walls (...and other semantic categories)</td>
+          <td>4:00pm - 4:25pm / 7:00am - 7:25am</td>
+        </tr>
+        <tr>
+          <td>Paper spotlights</td>
+          <td>4:30pm - 4:55pm / 7:30am - 7:55am</td>
+        </tr>
+        <tr>
+          <td>Panel discussion</td>
+          <td>5:00pm - 5:40pm / 8:00am - 8:40am</td>
+        </tr>
+        <tr>
+          <td>Concluding Remarks</td>
+          <td>5:40pm - 5:50pm / 8:40am - 8:50am</td>
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+</div>
+
+<p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Invited Speakers (Tentative)</h2>
+  </div>
+</div>
+
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://liuziwei7.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://liuziwei7.github.io/homepage_files/me.png" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://liuziwei7.github.io/">Ziwei Liu</a></b> is an Associate Professor at MMLab@NTU, College of Computing and Data Science in Nanyang Technological University, Singapore. Previously, he was a research fellow in Chinese University of Hong Kong with Prof. Dahua Lin and a post-doc researcher in University of California, Berkeley with Prof. Stella Yu. His research interests include computer vision, machine learning and computer graphics. Ziwei is the recipient of PAMI Mark Everingham Prize, MIT TR Innovators under 35 Asia Pacific, ICBS Frontiers of Science Award, CVPR Best Paper Award Candidate and Asian Young Scientist Fellowship.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://ranzato.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://ranzato.github.io/img/mr.png" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://ranzato.github.io/">Marc'Aurelio Ranzato</a></b> is a research scientist director at Google DeepMind in London. He is generally interested in Machine Learning, Computer Vision, Natural Language Processing and, more generally, Artificial Intelligence. His long term endeavor is to enable machines to learn more efficiently and with less supervision by transferring and acrruing knowledge over time. He joined Facebook and was a founding member of the Facebook AI Research lab. He havsbeen at Google DeepMind in London since August 2021, where He leads the continual learning team.
+    </p>
+  </div>
+</div>
+
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.uic.edu/~liub/"><img class="people-pic" style="float:left;margin-right:50px;" src="http://www.cs.uic.edu/~liub/BingLiu.JPG" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.uic.edu/~liub/">Bing Liu</a></b> is a Distinguished Professor and Peter L. and Deborah K. Wexler Professor of Computing at the University of Illinois at Chicago (UIC). He received his PhD in Artificial Intelligence from the University of Edinburgh. Before joining UIC, he was a faculty member (associate professor) at School of Computing, National University of Singapore (NUS). He was also with Peking University for one year (2019-2020). His current Research interests include lifelong or continual learning, open-world AI and continual learning, continual learning language models and dialogue systems, natural language processing, Machine learning, Artificial General Intellgience (AGI).
+</div>
+
+<p><br /></p>
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://faculty.cc.gatech.edu/~zk15/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://faculty.cc.gatech.edu/~zk15/images/2X6A9040_cropped2.jpg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://faculty.cc.gatech.edu/~zk15/">Zsolt Kira</a></b> is an Asssociate Professor at the School of Interactive Computing in the College of Computing, and serve as an Associate Director of ML@GT which is the machine learning center recently created at Georgia Tech. Previously He was a Branch Chief at the Georgia Tech Research Institute (GTRI) and Research Scientist at SRI International Sarnoff in Princeton. He leads the RobotIcs Perception and Learning (RIPL) lab. His areas of research specifically focus on the intersection of learning methods for sensor processing and robotics, developing novel machine learning algorithms and formulations towards solving some of the more difficult perception problems in these areas. He is especially interested in moving beyond supervised learning (un/semi/self-supervised and continual/lifelong learning) as well as distributed perception (multi-modal fusion, learning to incorporate information across a group of robots, etc.).
+    </p>
+  </div>
+</div>
+<p><br /></p>
+  
+</div>
+
+<!-- <p><br /></p>
+<div class="row" id="speakers">
+  <div class="col-xs-12">
+    <h2>Panelists</h2>
+  </div>
+</div> -->
+
+<!-- <div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cc.gatech.edu/~dbatra/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/batra.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cc.gatech.edu/~dbatra/">Dhruv Batra</a></b> is an Associate Professor in the School of
+      Interactive Computing at Georgia Tech and a Research Scientist at Facebook AI Research (FAIR).
+      His research interests lie at the intersection of machine learning, computer vision, natural language processing,
+      and AI. The long-term goal of his research is to develop agents that 'see' (or more generally
+      perceive their environment through vision, audition, or other senses), 'talk' (i.e. hold a natural language dialog
+      grounded in their environment), 'act' (e.g. navigate their environment and interact with it to accomplish goals),
+      and 'reason' (i.e., consider the long-term consequences of their actions).
+      He is a recipient of the Presidential Early Career Award for Scientists and Engineers (PECASE) 2019.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.cmu.edu/~katef/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/fragk.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.cmu.edu/~katef/">Katerina Fragkiadaki</a></b> is an Assistant Professor in the Machine Learning Department at Carnegie Mellon.
+      Prior to joining MLD's faculty she worked as a postdoctoral researcher first at UC Berkeley working with Jitendra Malik and then
+      at Google Research in Mountain View working with the video group. Katerina is interested in building machines that understand the
+      stories that videos portray, and, inversely, in using videos to teach machines about the world. The penultimate goal is
+      to build a machine that understands movie plots, and the ultimate goal is to build a machine that would want to watch Bergman over this.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<div class="row">
+  <div class="col-md-2">
+    <a href="https://www.cs.utexas.edu/~mooney/"><img class="people-pic" style="float:left;margin-right:50px;" src="static/img/people/mooney_raymond.jpeg" /></a>
+  </div>
+  <div class="col-md-10">
+    <p>
+      <b><a href="https://www.cs.utexas.edu/~mooney/">Raymond Mooney</a></b> is a Professor in the Department of Computer Science at the University of Texas at Austin. He received his Ph.D. in 1988 from the University of Illinois at Urbana/Champaign. He is an author of over 160 published research papers, primarily in the areas of machine learning and natural language processing. He was the President of the International Machine Learning Society from 2008-2011, program co-chair for AAAI 2006, general chair for HLT-EMNLP 2005, and co-chair for ICML 1990. He is a Fellow of the American Association for Artificial Intelligence, the Association for Computing Machinery, and the Association for Computational Linguistics and the recipient of best paper awards from AAAI-96, KDD-04, ICML-05 and ACL-07.
+    </p>
+  </div>
+</div>
+<p><br /></p> -->
+
+<p><br /></p>
+
+<div class="row" id="organizers">
+  <div class="col-xs-12">
+    <h2>Organizers</h2>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-xs-2 text-center">
+    <a href="yunhuiguo.github.io">
+      <img class="people-pic" src="https://yunhuiguo.github.io/img/small.png" />
+    </a>
+    <div class="people-name">
+      <a href="yunhuiguo.github.io">Yunhui Guo</a>
+      <h6>University of Texas at Dallas</h6>
+    </div>
+  </div>
+  
+ <div class="col-xs-2 text-center">
+    <a href="https://www.yapengtian.com/">
+      <img class="people-pic" src="https://www.yapengtian.com/assets/profile-pics/YapengTian.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://www.yapengtian.com/">Yapeng Tian</a>
+      <h6>University of Texas at Dallas</h6>
+    </div>
+  </div> 
+
+
+  <div class="col-xs-2 text-center">
+    <a href="https://mingrliu.github.io/index.html">
+      <img class="people-pic" src="https://mingrliu.github.io/images/photo1.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://mingrliu.github.io/index.html">Mingrui Liu</a>
+      <h6>George Mason University</h6>
+    </div>
+  </div> 
+
+
+  <div class="col-xs-2 text-center">
+    <a href="https://saynaebrahimi.github.io/">
+      <img class="people-pic" src="https://saynaebrahimi.github.io/mypic.JPG" />
+    </a>
+    <div class="people-name ">
+      <a href="https://saynaebrahimi.github.io/">Sayna Ebrahimi</a>
+      <h6> Google DeepMind</h6>
+    </div>
+  </div> 
+
+  <div class="col-xs-2 text-center">
+    <a href="https://www.henrygouk.com/">
+      <img class="people-pic" src="https://www.henrygouk.com/static/people/me.png" />
+    </a>
+    <div class="people-name ">
+      <a href="https://www.henrygouk.com/">Henry Gouk</a>
+      <h6>University of Edinburgh</h6>
+    </div>
+  </div> 
+  
+
+</div>
+
+<!-- <div class="row" id="advisors">
+  <div class="col-xs-12">
+    <h2>Senior Advisors</h2>
+  </div>
+</div>
+
+<div class="row">
+
+  <div class="col-xs-2">
+    <a href="http://optas.github.io">
+      <img class="people-pic" src="static/img/people/achlioptas.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="http://optas.github.io">Panos Achlioptas</a>
+      <h6>Steel Perlot</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://angelxuanchang.github.io/">
+      <img class="people-pic" src="static/img/people/angel.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://angelxuanchang.github.io/">Angel X. Chang</a>
+      <h6>Simon Fraser University</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">
+      <img class="people-pic" src="static/img/people/matthias.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://niessnerlab.org/members/matthias_niessner/profile.html">Matthias Niessner</a>
+      <h6>Technical University of Munich</h6>
+    </div>
+  </div>
+
+  <div class="col-xs-2">
+    <a href="https://geometry.stanford.edu/member/guibas/">
+      <img class="people-pic" src="static/img/people/guibas.jpg" />
+    </a>
+    <div class="people-name">
+      <a href="https://geometry.stanford.edu/member/guibas/">Leonidas J. Guibas</a>
+      <h6>Stanford University</h6>
+    </div>
+  </div>
+</div> -->
+
+<p><br /></p>
+
+<div class="row" id="contact">
+  <div class="col-xs-12">
+    <h2>Contact</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      To contact the organizers please use <b>mclworkshop25@gmail.com</b>.
+    </p>
+  </div>
+</div>
+<p><br /></p>
+
+<hr />
+
+<div class="row">
+  <div class="col-xs-12">
+    <h2>Acknowledgments</h2>
+  </div>
+</div>
+<p><a name="/acknowledgements"></a></p>
+<div class="row">
+  <div class="col-xs-12">
+    <p>
+      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://languagefor3dscenes.github.io/">https://languagefor3dscenes.github.io/</a></span> for the webpage format.
+    </p>
+  </div>
+</div>
+
+      </div>
+    </div>
+
+  </body>
+</html>

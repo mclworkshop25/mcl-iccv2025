@@ -2,6 +2,204 @@
 <!DOCTYPE html>
 <html>
   <head>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  #intro h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #intro p,
+  #intro ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #intro ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #intro ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #intro h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #intro p,
+  #intro ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #intro ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #intro ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #cfp h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #cfp p,
+  #cfp ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #cfp ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #cfp ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #dates h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #dates p,
+  #dates ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #dates ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #dates ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #schedule h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #schedule p,
+  #schedule ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #schedule ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #schedule ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #speakers h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #speakers p,
+  #speakers ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #speakers ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #speakers ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #organizers h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #organizers p,
+  #organizers ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #organizers ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #organizers ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+<style>
+  #contact h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.75em;
+    color: #222;
+    margin-bottom: 0.5em;
+  }
+  #contact p,
+  #contact ul {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.125em;
+    line-height: 1.6;
+    color: #444;
+  }
+  #contact ul {
+    margin-top: 1em;
+    padding-left: 1.5em;
+  }
+  #contact ul li {
+    margin-bottom: 0.5em;
+  }
+</style>
+ <style>
+    /* hide default bullets, reset padding */
+    ul.green-check {
+      list-style: none;
+      padding-left: 0;
+      font-size: 20px; /* keep your font size */
+    }
+    /* insert a green “✔” before each item */
+    ul.green-check li {
+      position: relative;
+      padding-left: 1.5em;
+      margin-bottom: .5em;
+    }
+    ul.green-check li:before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: green;
+      top: 0;
+    }
+  </style>
   <meta charset="utf-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -68,12 +266,13 @@
 
     <div class="navbar-collapse collapse" id="navbar-main">
       <ul class="nav navbar-nav">
-        <li><a href="#intro">Introduction</a></li>
-        <li><a href="#cfp">Call for papers</a></li>
-        <li><a href="#dates">Schedule</a></li>
-        <li><a href="#speakers">Invited Speakers</a></li>
-        <li><a href="#organizers">Organizers</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#intro" style="color: black; font-size: 1.25em;">Introduction</a></li>
+<li><a href="#cfp" style="color: black; font-size: 1.25em;">Call for papers (CfP)</a></li>
+<li><a href="#schedule" style="color: black; font-size: 1.25em;">Schedule</a></li>
+<li><a href="#speakers" style="color: black; font-size: 1.25em;">Invited Speakers</a></li>
+<li><a href="#organizers" style="color: black; font-size: 1.25em;">Organizers</a></li>
+<li><a href="#contact" style="color: black; font-size: 1.25em;">Contact</a></li>
+
         <!-- <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Past Workshops <span class="caret"></span></a>
           <ul class="dropdown-menu">
@@ -93,13 +292,30 @@
           <p><br /></p>
 <div class="row">
   <div class="col-xs-12">
-    <center><h1>Workshop on Multimodal Continual Learning </h1></center>
-    <center><h2>ICCV 2025 Workshop</h2></center>
-    <center>TBD, 2025</center>
+    <center><h1><b style="color: blue; font-size: 1.7em;">1st Workshop on Multimodal Continual Learning (MCL)</b></h1></center>
+    <center><h1><b>in conjunction with ICCV 2025</b></h1></center>
+    <center><h2><b>Honolulu, Hawai'i, USA 🏝 🏞 🚲</b></h2></center>
+    <!-- <center>Dates: TBD</center> -->
   </div>
 </div>
 
 <hr />
+
+<div class="row">
+  <div class="col-xs-6 text-center">
+    <img src="static/img/hawaii.png"
+         alt="Hawaii"
+         class="img-responsive center-block">
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="col-xs-6 text-center">
+    <img src="static/img/iccv_logo.png"
+         alt="ICCV Logo"
+         class="img-responsive center-block">
+  </div>
+</div>
 
 
 <!-- <br>
@@ -131,56 +347,70 @@
  -->
 
 
+<p><br/></p>
+  <div class="row welcome-red">
+    <div class="col-xs-12 text-center">
+          <!-- <h2><b style="color: black; font-size: 1.1em;">Welcome to MCL! 🎉</b></h2> -->
+      </div>
+      <div class="row">
+  <div class="col-xs-12 text-center">
+      <p style="font-size:18px;">
+        We are living in exciting times! We welcome you to the <b style="color: orangered">1st Workshop on Multimodal Continual Learning (MCL)</b> at <b style="color: orangered">ICCV 2025!</b>  
+        This workshop aims to bring together researchers and practitioners from various fields to discuss the <i><b style="color: orangered">latest advancements, challenges, and opportunities in multimodal continual learning</b></i>.  We hope to see you there!
+      </p>
+    </div>
+  </div>
 
-<p><br /></p>
+
+
+<p><br/></p>
 <div class="row" id="intro">
-  <div class="col-xs-12">
-    <h2>Introduction</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Why is this of importance? 💭 🖊️</b></h2>
   </div>
 </div>
 <div class="row">
-  <div class="col-xs-12">
-    <p>
-      In recent years, the machine learning and computer vision community has made significant advancements in continual learning (CL)—also known as lifelong learning or incremental learning—which enables models to learn new tasks incrementally while retaining previously acquired knowledge without requiring full-data retraining. Most of the early work in CL has focused on unimodal data, such as images, primarily for classification problems. However, with the rise of powerful multimodal models, which unify images, videos, text, and even audio, multimodal continual learning (MCL) has emerged as a crucial research direction. Unlike unimodal CL, where knowledge retention is constrained within a single modality, MCL must handle multiple modalities simultaneously. This introduces new challenges, such as modality-specific forgetting, modality imbalance, and the preservation of cross-modal associations over time.
+  <div class="col-xs-12 text-center">
+    <p style="font-size:18px;">
+      In recent years, the machine learning and computer vision community has made significant advancements in continual learning (CL)—also known as lifelong learning or incremental learning—which enables models to learn new tasks incrementally while retaining previously acquired knowledge without requiring full-data retraining. Most of the early work in CL has focused on unimodal data, such as images, primarily for classification problems. However, with the rise of powerful multimodal models, which unify images, videos, text, and even audio, multimodal continual learning (MCL) has emerged as a crucial research direction. <b style="color: magenta;">Unlike unimodal CL, where knowledge retention is constrained within a single modality, MCL must handle multiple modalities simultaneously. This introduces new challenges, such as modality-specific forgetting, modality imbalance, and the preservation of cross-modal associations over time.</b>
 
       This MCL workshop aims to address these challenges, explore emerging research opportunities, and advance the development of more inclusive, efficient, and continual learning systems. It will provide a platform for discussing cutting-edge research, identifying critical challenges, and fostering collaboration across academia, industry, and accessibility communities. This workshop is highly relevant to computer vision and machine learning researchers, AI practitioners, and those working on multimodal AI systems.    </p>
   </div>
 </div>
 
-<p><br /></p> 
+
+<p><br/></p>
 <div class="row" id="cfp">
-  <div class="col-xs-12">
-    <h2>Call For Papers</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Call for Papers 📰</b></h2>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-      <p>
-        <span style="font-weight:500;">Topics:</span> This workshop will cover, but is not limited to, the following topics at the intersection of computer vision, multimodal learning, continual learning:
+      <p style="font-size:18px;">
+        This workshop will cover, but is not limited to, the following topics at the intersection of <b style="color: orangered;"> computer vision, multimodal learning, continual learning:</b>
       </p>
-      <ul>
+      <ul style="font-size:18px;" class="green-check">
 
         <li> Multimodal Continual Learning (MCL)</li>
         <li> Multimodal Class-Incremental Learning</li>
         <li> Multimodal Domain-Incremental Learning</li>
         <li> Multimodal Task-Incremental Learning</li>
         <li> Multimodal Continual Learning in Generative Models</li>
-        <li> Continual Learning in Multimodal Foundation Models</li>
-        <li> Continual Learning in Multimodal Large Language Models (MLLMs)</li>
-        <li> Audio-Visual Continual Learning</li>
-        <li> Vision-Language Continual Learning</li>
+        <li> Continual Learning in Multimodal Foundation Models and Multimodal Large Language Models (MLLMs)</li>
+        <li> Continual Learning in Audio-Visual Models</li>
+        <li> Audio-Visual and Visual-Language Continual Learning</li>
         <li> Bias, Fairness, and Transparency in Continual Learning</li>
-        <li> Benchmarking and Evaluation</li>
-        <li> Applications</li>
+        <li> Benchmarking, Evaluations and Applications</li>
       </ul>
-      <p>
-        <span style="font-weight:500;">Submission:</span> The workshop invite both extended abstract and full paper submissions. We use <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/MCL">OpenReview</a> to manage submissions. The submission should be in the ICCV format. Please download the <a href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip"> ICCV 2025 Author Kit</a> for detailed formatting instructions.
-        Reviewing will be double-blind. Consistent with the review process for ICCV 2025 main conference, submissions under review will be visible only to their assigned members of the program committee. The reviews and author responses will never be made public. All accepted full papers and extended abstracts will be invited to present a poster. A selection of outstanding full papers will also be invited for oral presentations.
+      <p style="font-size:18px;">
+        <b>Submissions:</b> Our MCL workshop invites both <i><b>extended abstract</b></i> and <i><b>full paper</b></i> submissions. We use <a href="https://openreview.net/group?id=thecvf.com/ICCV/2025/Workshop/MCL"><b>OpenReview</b></a> to manage submissions. <i>The submission should be in the ICCV format.</i> Please download the <a href="https://media.eventhosts.cc/Conferences/ICCV2025/ICCV2025-Author-Kit-Feb.zip"> <b>ICCV 2025 Author Kit</b></a> for detailed formatting instructions.
+        Reviewing will be double-blind. Consistent with the review process for ICCV 2025 main conference, submissions under review will be visible only to their assigned members of the program committee. The reviews and author responses will never be made public. All accepted full papers and extended abstracts will be invited to present a poster. <i>Additionally, a selection of outstanding full papers will also be invited for oral presentations.</i>
         <ul>
-        <li> <span style="font-weight:500;">Extended Abstracts:</span> We accept 2-4 page extended abstracts. Accepted extended abstracts will not be published in the conference proceedings, allowing future submissions to archival conferences or journals. We also welcome already published papers that are within the scope of the workshop, including papers from the main ICCV conference.</li>
-        <li><span style="font-weight:500;">Full papers:</span> Papers should be longer than 4 pages but limited to 8 pages, excluding references, following the ICCV style.  Accepted full papers will be published in the ICCV workshop proceedings. </li>  
+        <li><b>Extended Abstracts:</b> We accept 2-4 page extended abstracts. Accepted extended abstracts will not be published in the conference proceedings, allowing future submissions to archival conferences or journals. We also welcome already published papers that are within the scope of the workshop, including papers from the main ICCV conference.</li>
+        <li><b>Full papers:</b> Papers should be longer than 4 pages but limited to 8 pages, excluding references, following the ICCV style.  Accepted full papers will be published in the ICCV workshop proceedings. </li>  
       </ul>
-      <p>
+      <p style="font-size:18px;">
         <span style="color:black;"><strong>Note:</strong></span> Since we are using the same submission system to manage all submissions, we have set the extended abstract deadline:
         <span style="color:red;"><strong>August 01</strong></span> as the workshop paper submission deadline on Openreview. However, please note that the full paper submission deadline is much earlier—
         <span style="color:red;"><strong>June 30</strong></span>—as we are required to provide paper information to the ICCV 2025 conference by their deadline.
@@ -189,63 +419,40 @@
   </div>
 </div>                                                                                        
 
-<!-- <p><br /></p>
-<div class="row" id="cfp">
-  <div class="col-xs-12">
-    <h2>Accepted Papers</h2>
-  </div>
-</div>
-<div class="row">
-  <div class="col-md-12">
-    <table>
-      <tbody> 
-      <tr><td><a href="https://arxiv.org/abs/2212.01558">#1. PartSLIP: Low-Shot Part Segmentation for 3D Point Clouds via Pretrained Image-Language Models</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Minghua Liu, Yinhao Zhu, Hong Cai, Shizhong Han, Zhan Ling, Fatih Porikli, Hao Su</font></td></tr>
-      <tr><td><a href="https://arxiv.org/abs/2112.08359">#2. 3D Question Answering</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuquan Ye, Dongdong Chen, Songfang Han, Jing Liao</font></td></tr>
-      <tr><td><a href="https://arxiv.org/abs/2211.11682">#3. PointCLIP V2: Prompting CLIP and GPT for Powerful 3D Open-world Learning</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Xiangyang Zhu, Renrui Zhang, Bowei He, Ziyu Guo, Ziyao Zeng, Zipeng Qin, Shanghang Zhang, Peng Gao</font></td> </tr>        
-      <tr><td><a href="https://arxiv.org/abs/2211.16312">#4. PLA: Language-Driven Open-Vocabulary 3D Scene Understanding</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Runyu Ding, Jihan Yang, Chuhui Xue, Wenqing Zhang, Song Bai, Xiaojuan Qi</font></td></tr>
-      <tr><td><a href="https://arxiv.org/abs/2303.16894">#5. ViewRefer: Grasp the Multi-view Knowledge for 3D Visual Grounding</a><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Zoey Guo, Yiwen Tang, Ray Zhang, Dong Wang, Zhigang Wang, Bin Zhao, Xuelong Li</font></td></tr>
-      <tr><td><a href="https://arxiv.org/abs/2211.15654">#6.  OpenScene: 3D Scene Understanding with Open Vocabularies</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Songyou Peng, Kyle Genova, Chiyu "Max" Jiang, Andrea Tagliasacchi, Marc Pollefeys, Thomas Funkhouser</font></td></tr>
-      <tr><td><a href="https://openaccess.thecvf.com/content/ICCV2023/papers/Kurita_RefEgo_Referring_Expression_Comprehension_Dataset_from_First-Person_Perception_of_Ego4D_ICCV_2023_paper.pdf">#7. RefEgo: Referring Expression Comprehension Dataset from First-Person Perception of Ego4D </a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Shuhei Kurita, Naoki Katsura, Eri Onami</font></td></tr>
-      <tr><td><a href="https://arxiv.org/abs/2303.12236">#8. SALAD: Part-Level Latent Diffusion for 3D Shape Generation and Manipulation</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Juil Koo, Seungwoo Yoo, Minh Hieu Nguyen, Minhyuk Sung</font></td></tr>
-      <tr><td><a href="https://3d-vista.github.io">#9. 3D-VisTA: Pre-trained Transformer for 3D Vision and Text Alignment</a> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="gray">Ziyu Zhu, Xiaojian Ma, Yixin Chen, Zhidong Deng, Siyuan Huang, Qing Li</font></td></tr>
-    </tbody></table>
-  </div>
 
-</div> -->
 
-<p><br /></p>
-
+<p><br/></p>
 <div class="row" id="dates">
-  <div class="col-xs-12">
-    <h2>Important Dates</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Important Dates 🕰️</b></h2>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
     <table class="table table-striped">
-      <tbody>
+      <tbody style="font-size:18px;">
         <tr>
           <td>Call for papers announced</td>
           <td>May 12</td>
         </tr>
         <tr>
-          <td><span style="color:red;"><strong> Full Paper submission deadline</strong></span> </td>
+          <td><span style="color:red;"><strong> Full paper submission deadline</strong></span> </td>
           <td>June 30</td>
         </tr>
         <tr>
-          <td>Notifications to accepted Full papers</td>
+          <td>Notifications to accepted full papers</td>
           <td>July 10 </td>
         </tr>
         <tr>
-          <td><span style="color:red;"><strong>Extended Abstract submission deadline</strong></span>  </td>
+          <td><span style="color:red;"><strong>Extended abstract submission deadline</strong></span>  </td>
           <td>Aug 01</td>
         </tr>
         <tr>
-          <td>Notifications to accepted Extended abstract papers</td>
+          <td>Notifications to accepted extended abstract papers</td>
           <td>Aug 10</td>
         </tr>
         <tr>
-          <td>Camera-ready deadline for accepted full and Extended abstract papers</td>
+          <td>Camera-ready deadline for accepted full and extended abstract papers</td>
           <td>Aug 16</td>
         </tr>
         <tr>
@@ -258,15 +465,15 @@
   </div>
 </div>
 
-<p><br /></p>
+<p><br/></p>
 <div class="row" id="schedule">
-  <div class="col-xs-12">
-    <h2>Schedule (Hawaii Standard Time)</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Schedule 📅</b></h2>
   </div>
 </div>
 <div class="row">
   <div class="col-xs-12">
-    TBA
+    <p style="font-size:18px;">We are finalizing the schedule and will announce it in the coming weeks. The workshop will be held in-person at ICCV 2025 in Honolulu, Hawai'i, USA.
      <!-- <table class="table table-striped">
       <tbody>
         <tr>
@@ -310,10 +517,10 @@
   </div>
 </div>
 
-<p><br /></p>
+<p><br/></p>
 <div class="row" id="speakers">
-  <div class="col-xs-12">
-    <h2>Invited Speakers (Tentative)</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Invited Speakers (Tentative) 🎓</b></h2>
   </div>
 </div>
 
@@ -321,11 +528,11 @@
 
 <div class="row">
   <div class="col-md-2">
-    <a href="https://liuziwei7.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://liuziwei7.github.io/homepage_files/me.png" /></a>
+    <a href="https://liuziwei7.github.io/"><img class="people-pic" style="width: 300px; height: 300px;float:left;margin-right:50px;" src="https://liuziwei7.github.io/homepage_files/me.png" /></a>
   </div>
   <div class="col-md-10">
-    <p>
-      <b><a href="https://liuziwei7.github.io/">Ziwei Liu</a></b> is an Associate Professor at MMLab@NTU, College of Computing and Data Science in Nanyang Technological University, Singapore. Previously, he was a research fellow in Chinese University of Hong Kong with Prof. Dahua Lin and a post-doc researcher in University of California, Berkeley with Prof. Stella Yu. His research interests include computer vision, machine learning and computer graphics. Ziwei is the recipient of PAMI Mark Everingham Prize, MIT TR Innovators under 35 Asia Pacific, ICBS Frontiers of Science Award, CVPR Best Paper Award Candidate and Asian Young Scientist Fellowship.
+    <p style="font-size:18px;">
+      <b><a href="https://liuziwei7.github.io/" style="font-size: 30px;">Ziwei Liu</a></b> is an Associate Professor at MMLab@NTU, College of Computing and Data Science in Nanyang Technological University, Singapore. Previously, he was a research fellow in Chinese University of Hong Kong with Prof. Dahua Lin and a post-doc researcher in University of California, Berkeley with Prof. Stella Yu. His research interests include computer vision, machine learning and computer graphics. Ziwei is the recipient of PAMI Mark Everingham Prize, MIT TR Innovators under 35 Asia Pacific, ICBS Frontiers of Science Award, CVPR Best Paper Award Candidate and Asian Young Scientist Fellowship.
     </p>
   </div>
 </div>
@@ -333,11 +540,11 @@
 
 <div class="row">
   <div class="col-md-2">
-    <a href="https://ranzato.github.io/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://ranzato.github.io/img/mr.png" /></a>
+    <a href="https://ranzato.github.io/"><img class="people-pic" style="width: 300px; height: 300px; float:left;margin-right:50px;" src="https://ranzato.github.io/img/mr.png" /></a>
   </div>
   <div class="col-md-10">
-    <p>
-      <b><a href="https://ranzato.github.io/">Marc'Aurelio Ranzato</a></b> is a research scientist director at Google DeepMind in London. He is generally interested in Machine Learning, Computer Vision, Natural Language Processing and, more generally, Artificial Intelligence. His long term endeavor is to enable machines to learn more efficiently and with less supervision by transferring and acrruing knowledge over time. He joined Facebook and was a founding member of the Facebook AI Research lab. He has been at Google DeepMind in London since August 2021, where He leads the continual learning team.
+    <p style="font-size:18px;">
+      <b><a href="https://ranzato.github.io/" style="font-size: 30px;">Marc'Aurelio Ranzato</a></b> is a research scientist director at Google DeepMind in London. He is generally interested in Machine Learning, Computer Vision, Natural Language Processing and, more generally, Artificial Intelligence. His long term endeavor is to enable machines to learn more efficiently and with less supervision by transferring and acrruing knowledge over time. He joined Facebook and was a founding member of the Facebook AI Research lab. He has been at Google DeepMind in London since August 2021, where he leads the continual learning team.
     </p>
   </div>
 </div>
@@ -346,25 +553,27 @@
 <p><br /></p>
 <div class="row">
   <div class="col-md-2">
-    <a href="https://www.cs.uic.edu/~liub/"><img class="people-pic" style="float:left;margin-right:50px;" src="http://www.cs.uic.edu/~liub/BingLiu.JPG" /></a>
+    <a href="https://www.cs.uic.edu/~liub/"><img class="people-pic" style="width: 300px; height: 300px; float:left;margin-right:50px;" src="http://www.cs.uic.edu/~liub/BingLiu.JPG" /></a>
   </div>
   <div class="col-md-10">
-    <p>
-      <b><a href="https://www.cs.uic.edu/~liub/">Bing Liu</a></b> is a Distinguished Professor and Peter L. and Deborah K. Wexler Professor of Computing at the University of Illinois at Chicago (UIC). He received his PhD in Artificial Intelligence from the University of Edinburgh. Before joining UIC, he was a faculty member (associate professor) at School of Computing, National University of Singapore (NUS). He was also with Peking University for one year (2019-2020). His current Research interests include lifelong or continual learning, open-world AI and continual learning, continual learning language models and dialogue systems, natural language processing, Machine learning, Artificial General Intellgience (AGI).
+    <p style="font-size:18px;">
+      <b><a href="https://www.cs.uic.edu/~liub/" style="font-size: 30px;">Bing Liu</a></b> is a Distinguished Professor and Peter L. and Deborah K. Wexler Professor of Computing at the University of Illinois at Chicago (UIC). He received his PhD in Artificial Intelligence from the University of Edinburgh. Before joining UIC, he was a faculty member (associate professor) at School of Computing, National University of Singapore (NUS). He was also with Peking University for one year (2019-2020). His current Research interests include lifelong or continual learning, open-world AI and continual learning, continual learning language models and dialogue systems, natural language processing, Machine learning, Artificial General Intellgience (AGI).
+    </p>
+    </div>
 </div>
 
 <p><br /></p>
 <div class="row">
   <div class="col-md-2">
-    <a href="https://faculty.cc.gatech.edu/~zk15/"><img class="people-pic" style="float:left;margin-right:50px;" src="https://faculty.cc.gatech.edu/~zk15/images/2X6A9040_cropped2.jpg" /></a>
+    <a href="https://faculty.cc.gatech.edu/~zk15/"><img class="people-pic" style="width: 300px; height: 300px; float:left;margin-right:50px;" src="https://faculty.cc.gatech.edu/~zk15/images/2X6A9040_cropped2.jpg" /></a>
   </div>
   <div class="col-md-10">
-    <p>
-      <b><a href="https://faculty.cc.gatech.edu/~zk15/">Zsolt Kira</a></b> is an Asssociate Professor at the School of Interactive Computing in the College of Computing, and serve as an Associate Director of ML@GT which is the machine learning center recently created at Georgia Tech. Previously He was a Branch Chief at the Georgia Tech Research Institute (GTRI) and Research Scientist at SRI International Sarnoff in Princeton. He leads the RobotIcs Perception and Learning (RIPL) lab. His areas of research specifically focus on the intersection of learning methods for sensor processing and robotics, developing novel machine learning algorithms and formulations towards solving some of the more difficult perception problems in these areas. He is especially interested in moving beyond supervised learning (un/semi/self-supervised and continual/lifelong learning) as well as distributed perception (multi-modal fusion, learning to incorporate information across a group of robots, etc.).
+    <p style="font-size:18px;">
+      <b><a href="https://faculty.cc.gatech.edu/~zk15/" style="font-size: 30px;">Zsolt Kira</a></b> is an Asssociate Professor at the School of Interactive Computing in the College of Computing, and serve as an Associate Director of ML@GT which is the machine learning center recently created at Georgia Tech. Previously He was a Branch Chief at the Georgia Tech Research Institute (GTRI) and Research Scientist at SRI International Sarnoff in Princeton. He leads the RobotIcs Perception and Learning (RIPL) lab. His areas of research specifically focus on the intersection of learning methods for sensor processing and robotics, developing novel machine learning algorithms and formulations towards solving some of the more difficult perception problems in these areas. He is especially interested in moving beyond supervised learning (un/semi/self-supervised and continual/lifelong learning) as well as distributed perception (multi-modal fusion, learning to incorporate information across a group of robots, etc.).
     </p>
   </div>
 </div>
-<p><br /></p>
+<!-- <p><br /></p> -->
   
 </div>
 
@@ -422,11 +631,10 @@
 </div>
 <p><br /></p> -->
 
-<p><br /></p>
-
+<p><br/></p>
 <div class="row" id="organizers">
-  <div class="col-xs-12">
-    <h2>Organizers</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Organizers 😀</b></h2>
   </div>
 </div>
 
@@ -437,8 +645,8 @@
       <img class="people-pic" src="https://yunhuiguo.github.io/img/small.png" />
     </a>
     <div class="people-name">
-      <a href="yunhuiguo.github.io">Yunhui Guo</a>
-      <h6>University of Texas at Dallas</h6>
+      <a href="yunhuiguo.github.io" style="font-size: 25px;"><b>Yunhui Guo</b></a>
+      <h4 style="font-size: 13px;">The University of Texas at Dallas</h4>
     </div>
   </div>
   
@@ -447,8 +655,8 @@
       <img class="people-pic" src="https://www.yapengtian.com/assets/profile-pics/YapengTian.jpg" />
     </a>
     <div class="people-name">
-      <a href="https://www.yapengtian.com/">Yapeng Tian</a>
-      <h6>University of Texas at Dallas</h6>
+      <a href="https://www.yapengtian.com/" style="font-size: 25px;"><b>Yapeng Tian</b></a>
+      <h4 style="font-size: 13px;">The University of Texas at Dallas</h4>
     </div>
   </div> 
 
@@ -458,8 +666,8 @@
       <img class="people-pic" src="https://mingrliu.github.io/images/photo1.jpg" />
     </a>
     <div class="people-name">
-      <a href="https://mingrliu.github.io/index.html">Mingrui Liu</a>
-      <h6>George Mason University</h6>
+      <a href="https://mingrliu.github.io/index.html" style="font-size: 25px;"><b>Mingrui Liu</b></a>
+      <h4 style="font-size: 13px;">George Mason University</h4>
     </div>
   </div> 
 
@@ -469,8 +677,8 @@
       <img class="people-pic" src="https://saynaebrahimi.github.io/mypic.JPG" />
     </a>
     <div class="people-name ">
-      <a href="https://saynaebrahimi.github.io/">Sayna Ebrahimi</a>
-      <h6> Google DeepMind</h6>
+      <a href="https://saynaebrahimi.github.io/" style="font-size: 25px;"><b>Sayna Ebrahimi</b></a>
+      <h4 style="font-size: 13px;">Google DeepMind</h4>
     </div>
   </div> 
 
@@ -479,8 +687,8 @@
       <img class="people-pic" src="https://www.henrygouk.com/static/people/me.png" />
     </a>
     <div class="people-name ">
-      <a href="https://www.henrygouk.com/">Henry Gouk</a>
-      <h6>University of Edinburgh</h6>
+      <a href="https://www.henrygouk.com/" style="font-size: 25px;"><b>Henry Gouk</b></a>
+      <h4 style="font-size: 13px;">University of Edinburgh</h4>
     </div>
   </div> 
 
@@ -489,8 +697,8 @@
       <img class="people-pic" src="https://tta-icml2025.github.io/_static/organizers/sarthak_maharana.jpeg" />
     </a>
     <div class="people-name ">
-      <a href="https://sarthaxxxxx.github.io/">Sarthak Maharana</a>
-      <h6>University of Texas at Dallas</h6>
+      <a href="https://sarthaxxxxx.github.io/" style="font-size: 25px;"><b>Sarthak Maharana</b></a>
+      <h4 style="font-size: 13px;">The University of Texas at Dallas</h4>
     </div>
   </div> 
   
@@ -548,15 +756,17 @@
 
 <p><br /></p>
 
+<p><br/></p>
 <div class="row" id="contact">
-  <div class="col-xs-12">
-    <h2>Contact</h2>
+  <div class="col-xs-12 text-center">
+    <h2><b style="color: black; font-size: 1.1em;">Contact 📧</b></h2>
   </div>
 </div>
+
 <div class="row">
   <div class="col-xs-12">
-    <p>
-      To contact the organizers please use <b>mclworkshop25@gmail.com</b>.
+    <p style="font-size:18px;">
+      Please feel free to reach out to us if you have any questions or suggestions regarding the workshop. Email us at <b>mclworkshop25@gmail.com</b>. We are looking forward to your contributions and participation in the MCL workshop at ICCV 2025!
     </p>
   </div>
 </div>
@@ -566,14 +776,14 @@
 
 <div class="row">
   <div class="col-xs-12">
-    <h2>Acknowledgments</h2>
+    <h2><b style="color: black; font-size: 1.1em;">Acknowledgements</b></h2>
   </div>
 </div>
 <p><a name="/acknowledgements"></a></p>
 <div class="row">
   <div class="col-xs-12">
-    <p>
-      Thanks to <span style="color:#1a1aff;font-weight:400;"> <a href="https://languagefor3dscenes.github.io/">https://languagefor3dscenes.github.io/</a></span> for the webpage format.
+    <p style="font-size:18px;">
+      We would like to thank <span style="color:#1a1aff;font-weight:400;"> <a href="https://languagefor3dscenes.github.io/">https://languagefor3dscenes.github.io/</a></span> for the webpage format.
     </p>
   </div>
 </div>
